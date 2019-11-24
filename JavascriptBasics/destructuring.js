@@ -1,9 +1,8 @@
 // Array Matching
 var list = [1, 2, 3]
-var [a, , b] = (list[
+var [a, , b] = list
   // a= 1, b =3
-  (b, a)
-] = [a, b])
+[b, a] = [a, b]
 // a=3, b=1
 
 // Default values
