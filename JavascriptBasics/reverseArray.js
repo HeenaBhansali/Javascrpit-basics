@@ -15,11 +15,7 @@ const reverseArray = arr => {
 }
 
 // Using reduce with unshit
-const reverseArray = arr =>
-  arr.reduce((acc, cur) => {
-    acc.unshift(cur)
-    return acc
-  }, [])
+const reverseArray = arr => arr.reduce((acc, cur) => acc.unshift(cur), [])
 
 // Using reduce with rest operator
 const reverseArray = arr => arr.reduce((acc, cur) => [cur, ...acc], [])
