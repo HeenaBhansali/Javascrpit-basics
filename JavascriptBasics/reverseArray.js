@@ -7,15 +7,19 @@ const reverseArray = arr => arr.reverse()
 
 // Using for loop
 const reverseArray = arr => {
-  const newArr = []
+  newArr = []
   for (let i = arr.length - 1; i >= 0; i--) {
     newArr.push(arr[i])
   }
   return newArr
 }
 
-// Using reduce with unshit
-const reverseArray = arr => arr.reduce((acc, cur) => acc.unshift(cur), [])
+// Using reduce with unshift
+const reverseArray = arr =>
+  arr.reduce((acc, cur) => {
+    acc.unshift(cur)
+    return acc
+  }, [])
 
 // Using reduce with rest operator
 const reverseArray = arr => arr.reduce((acc, cur) => [cur, ...acc], [])
