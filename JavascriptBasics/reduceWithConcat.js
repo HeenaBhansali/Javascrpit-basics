@@ -4,8 +4,6 @@
  Input: [[1,2,3],[4,5],[6]]
  Output: [1,2,3,4,5,6] */
 
-let reduceFun = arr => {
-  return arr.reduce((acc, cur) => acc.concat(cur), [])
-}
+const reduceFun = arr => arr.reduce((acc, cur) => acc.concat(cur), [])
 
 console.log(reduceFun([[1, 2, 3], [4, 5], [6]]))
