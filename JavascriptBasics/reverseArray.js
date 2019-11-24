@@ -25,4 +25,14 @@ let reverseArray = arr => {
   }, [])
 }
 
+// Using reduce with rest operator
+let reverseArray = arr => {
+  return arr.reduce((acc, cur) => [cur, ...acc], [])
+}
+
+// Using map
+let reverseArray = arr => {
+  return arr.map((value, index, array) => array[array.length - index - 1])
+}
+
 console.log(reverseArray([1, 2, 3, 4, 5]))
