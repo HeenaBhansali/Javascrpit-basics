@@ -14,6 +14,7 @@ console.log(a)
 // 2
 var a = 1
 function b() {
+  v
   a = 10
   return
   var a = 100
@@ -68,7 +69,7 @@ console.log(a())
 function a() {
   return 100
 }
-// output 100 in js we can call function before declaration
+// output 100 in js functions are hoisted
 
 // 8
 console.log(a())
